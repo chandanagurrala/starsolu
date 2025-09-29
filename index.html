@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StarSolu AI Meme Chat</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/image" href="favicon.jpeg">
+</head>
+<body>
+  <div class="app-container">
+    <div class="sidebar">
+      <div class="logo-container">
+        <img src="logo.jpeg" alt="StarSolu Logo" class="logo">
+        <h2>StarSolu</h2>
+      </div>
+      <button id="new-chat-btn" class="sidebar-btn">
+        <i class="fas fa-plus"></i>
+        New Chat
+      </button>
+      <div class="history-container">
+        <h3>Recent Chats</h3>
+        <div id="chat-history"></div>
+      </div>
+      <div class="sidebar-footer">
+        <p>StarSolu AI v1.0.0</p>
+      </div>
+    </div>
+    
+    <div class="main-content">
+      <header>
+        <h1><span class="gradient-text">AI Meme Chat</span></h1>
+        <div class="theme-toggle">
+          <i class="fas fa-moon" id="theme-toggle-icon"></i>
+        </div>
+      </header>
+
+      <div class="chat-container" id="chat-container">
+        <div id="welcome-screen">
+          <h2>Welcome to StarSolu AI Meme Chat!</h2>
+          <p>Ask me anything and I'll respond with both an answer and a meme that matches the emotional tone.</p>
+          <div class="example-prompts">
+            <div class="example-card" onclick="useExample('Tell me about quantum computing')">
+              <i class="fas fa-atom"></i>
+              <span>Tell me about quantum computing</span>
+            </div>
+            <div class="example-card" onclick="useExample('What is the meaning of life?')">
+              <i class="fas fa-question-circle"></i>
+              <span>What is the meaning of life?</span>
+            </div>
+            <div class="example-card" onclick="useExample('Write a short funny story')">
+              <i class="fas fa-book"></i>
+              <span>Write a short funny story</span>
+            </div>
+            <div class="example-card" onclick="useExample('How to stay motivated?')">
+              <i class="fas fa-bolt"></i>
+              <span>How to stay motivated?</span>
+            </div>
+          </div>
+        </div>
+        <div id="chat-messages"></div>
+        <div id="typing-indicator" class="typing-indicator hidden">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="input-container">
+        <textarea id="user-input" placeholder="Ask something..." rows="1"></textarea>
+        <button id="send-button" disabled>
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+      <div class="footer">
+        <p>AI responses may contain inaccuracies. Use your judgment.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
