@@ -15,7 +15,8 @@ Instead of plain text responses, it answers your questions with:
 
 Think of it as a mix between ChatGPT + Meme templates + Emojis – making you feel like you’re chatting with a friend, not a bot.
 
-![StarSolu AI Screenshot]("C:\Users\kravi\Downloads\image.jpeg")
+<img src="./image.jpeg" alt="StarSolu AI Screenshot" width="500"/>
+
 
 
 ✨ Features
